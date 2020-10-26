@@ -1,8 +1,11 @@
-export * from "./App"
-export * from "./App.test"
-export * from "./components"
-export * from "./constant"
-export * from "./css"
-export * from "./pages"
-export * from "./reportWebVitals"
-export * from "./setupTests"
+import React from "react"
+import ReactDOM from "react-dom"
+import "./index.css"
+import App from "./app/App"
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+)
