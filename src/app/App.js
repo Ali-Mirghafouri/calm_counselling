@@ -1,6 +1,7 @@
 import "./App.css"
 import logo from "./calm_counselling_logo.png"
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom"
+import {Home} from "../pages"
 
 const tabOptions = ["Home", "About", "Services", "Gallery", "Contact"]
 
@@ -21,9 +22,11 @@ function App() {
         </div>
       </div>
       <Switch>
+        <Route path="/Home">
+          <Home />
+        </Route>
         <Route path="/about"></Route>
         <Route path="/users"></Route>
-        <Route path="/Home"></Route>
         <Route path="/Gallery"></Route>
         <Route path="/Contact"></Route>
       </Switch>

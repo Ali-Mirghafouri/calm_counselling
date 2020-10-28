@@ -1,0 +1,44 @@
+.home_section1 {
+  width: 100%;
+  height: 89.4vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home_section1_inner_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_section1_quote_container {
+  width: 53.646vw;
+  height: 36.019vh;
+  background-color: rgb(3, 34, 39, 65%);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_section1_quote {
+  color: white;
+  font-size: 39px;
+  line-height: 66px;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 0px 94px;
+  opacity: 100%;
+}
+.home_section1_button {
+  width: 27.24vw;
+  height: 7.13vh;
+  background-color: #d7eae0;
+  border-radius: 28px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #33535f;
+  border: none;
+  padding: 0px;
+  margin-top: 20px;
+}
