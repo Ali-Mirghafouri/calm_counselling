@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .app_nav_container {
   display: flex;
   width: 100%;

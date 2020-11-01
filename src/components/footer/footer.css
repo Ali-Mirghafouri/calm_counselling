@@ -1,0 +1,44 @@
+.footer_container {
+  width: 100%;
+  height: 27.037vh;
+  background-color: #33535f;
+  display: flex;
+}
+.footer_image_container {
+  width: 6.979vw;
+  height: 4.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_image {
+  width: 1.7vw;
+  height: 3vh;
+}
+.footer_image_link {
+  width: 3.5vw;
+  height: 5.5vh;
+}
+.footer_text {
+  font-size: 19px;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.footer_copy_right {
+  font-size: 20px;
+  width: 60vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  padding-bottom: 2.5vh;
+}
+.footer_flex {
+  display: flex;
+}
+.footer_space {
+  width: 6.979vw;
+  height: 6vw;
+}

@@ -1,0 +1,30 @@
+.slider_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.slide_inner_container {
+  width: 100%;
+  height: 52.222vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.slider_content {
+  width: 71.094vw;
+  font-size: 45px;
+  text-align: center;
+}
+.slider_arrow_back {
+  width: 6.302vw;
+  margin-left: 33px;
+}
+.slider_arrow_next {
+  width: 6.302vw;
+  margin-right: 33px;
+}
+.slide_content_writer {
+  font-size: 45px;
+  font-weight: bold;
+}

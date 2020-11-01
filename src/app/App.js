@@ -1,27 +1,28 @@
 import "./App.css"
-import logo from "./calm_counselling_logo.png"
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom"
 import {Home} from "../pages"
-
-const tabOptions = ["Home", "About", "Services", "Gallery", "Contact"]
+import {NAV} from "../constant"
+import {images} from "../images"
 
 function App() {
   return (
     <Router>
-      <Redirect to="/Home" />
       <div className="app_nav_container">
         <div className="app_img_container">
-          <img src={logo} alt="calm counselling logo"></img>
+          <img src={images.logo} alt="calm counselling logo"></img>
         </div>
         <div className="app_nav_options_container">
-          {tabOptions.map((tabName) => (
-            <a className="app_nav_option" href={"/" + tabName}>
+          {NAV.map((tabName) => (
+            <a key={tabName} className="app_nav_option" href={"/" + tabName}>
               {tabName}
             </a>
           ))}
         </div>
       </div>
       <Switch>
+        <Route exact path="/">
+          <Redirect exact from="/" to="/Home" />
+        </Route>
         <Route path="/Home">
           <Home />
         </Route>
