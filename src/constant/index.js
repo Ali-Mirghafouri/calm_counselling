@@ -30,4 +30,47 @@ export const HOME = {
   ],
 }
 
+export const ABOUT = {
+  meet: "MEET OUR TEAM.",
+  why_header: "why choose us.",
+  why_description: [
+    "We ensure that our clients have access and experience to a trusting,",
+    "safe and therapeutic setting and environment.",
+    "We listen empathically; we provide an unconditional positive regard",
+    "and we practice the concept of congruence. Our therapists focus on",
+    "clients wants and needs.",
+  ],
+  why_reasons: {
+    text: ["Flexible", "Build", "Trusting and Reliable", "Relaxing"],
+    subText: ["Appointment", "Confidence", "Counseling Services", "Environment"],
+  },
+  team: {
+    name: ["Nur Liyana @ Parimala Devi Muniandy", "Dr. Shahirah ", "Fatin Nadhirah Binti Rosly"],
+    position: ["Registered Counsellor & Trainer", "Registered Counsellor", "Registered Counsellor"],
+    achievements: [
+      [
+        "BA(Hons) in Geography UM",
+        "Master in Counselling OUM",
+        "Founder of Calm Counselling Services",
+        "Registered Counselor KB 07245 PA 06770",
+        "Consultant Counselor at DSH Institute of Technology",
+        "Training of Trainers on Sexual Harassment - AWAM",
+        "Certified HRDF Trainer",
+        "Certified Dianetics Practitioner",
+        "Certified AD-HTP Practitioner (House-Tree-Person)",
+      ],
+      [
+        "MBBS",
+        "Master in Counselling",
+        "Certified HRDF Trainer",
+        "Certified PFA provider",
+        "Training of Trainers on Sexual Harassment (AWAM)",
+        "Registered Counselor",
+        "KB 07257 PA 06779",
+      ],
+      ["B.Ed (Hons.) TESL", "M.Ed Guidance and Counselling ", "Registered Counsellor KBPA"],
+    ],
+  },
+}
+
 export const NAV = ["Home", "About", "Services", "Gallery", "Contact"]

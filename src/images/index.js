@@ -14,7 +14,15 @@ import phone from "./phone.png"
 import mail from "./mail.png"
 import insta from "./insta.png"
 import facebook from "./facebook.png"
-
+import confidence from "./confidence.png"
+import relax from "./relax.png"
+import time from "./time.png"
+import shahira from "./shahira.png"
+import nur from "./nur.png"
+import Fatin from "./Fatin.png"
+import noPath from "./noPath.png"
+import counselling from "./counselling.png"
+import about_us_header from "./about_us_header.png"
 export const images = {
   slider: {
     arrow_back: arrow_back,
@@ -31,6 +39,14 @@ export const images = {
     mail: mail,
     insta: insta,
     facebook: facebook,
+  },
+  aboutUs: {
+    header: about_us_header,
+    why_choose_us: [time, confidence, counselling, relax],
+    team: [nur, shahira, Fatin],
+  },
+  services: {
+    noPath: noPath
   },
   logo: logo,
 }

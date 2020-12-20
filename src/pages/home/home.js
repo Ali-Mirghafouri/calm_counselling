@@ -35,6 +35,7 @@ export function Home() {
               <ImageWithText
                 key={text}
                 text={text}
+                textStyle={{textAlign: "center"}}
                 image={images.home.types[index]}
                 fontSize="30px"
                 imageWidth="18.229vw"
