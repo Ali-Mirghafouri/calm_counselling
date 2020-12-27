@@ -1,9 +1,8 @@
 import "./App.css"
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom"
-import {About, Home} from "../pages"
+import {About, Home, Services, Contact} from "../pages"
 import {NAV} from "../constant"
 import {images} from "../images"
-import {Services} from "../pages/services"
 
 function App() {
   return (
@@ -33,8 +32,9 @@ function App() {
         <Route path="/Services">
           <Services />
         </Route>
-        <Route path="/Gallery"></Route>
-        <Route path="/Contact"></Route>
+        <Route path="/Contact">
+          <Contact />
+        </Route>
       </Switch>
     </Router>
   )

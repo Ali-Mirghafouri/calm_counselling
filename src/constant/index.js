@@ -73,4 +73,22 @@ export const ABOUT = {
   },
 }
 
-export const NAV = ["Home", "About", "Services", "Gallery", "Contact"]
+export const SERVICES = {
+  therapy: "Therapy",
+  therapy_description: "Individual, couple, family and group therapy",
+  emotional_Support: "Emotional Support",
+  emotional_Support_description:
+    "Provide support, reassurance, and encouragement in times of stress",
+  build_confidence: "Build Confidence",
+  build_confidence_description: "Guidance to face challenges in life",
+  personal_growth: "Personal Growth",
+  personal_growth_description: "Guidance to achieve personal growth",
+  positive_mindset: "Positive Mindset",
+  positive_mindset_description: "Guidance to achieve a positive mind-set",
+  harmonious_relationship: "Harmonious Relationship",
+  harmonious_relationship_description: "Support to achieve harmonious relationships",
+  training_workshop: "Training and Workshop",
+  training_workshop_description: "Training and workshop on personal development",
+}
+
+export const NAV = ["Home", "About", "Services", "Contact"]

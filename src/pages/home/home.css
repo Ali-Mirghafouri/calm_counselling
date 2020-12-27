@@ -126,4 +126,5 @@
   background-color: rgb(3, 34, 39, 65%);
   border: solid 1px black;
   /* height: ; */
+  width: min-content;
 }

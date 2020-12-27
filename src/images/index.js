@@ -23,6 +23,14 @@ import Fatin from "./Fatin.png"
 import noPath from "./noPath.png"
 import counselling from "./counselling.png"
 import about_us_header from "./about_us_header.png"
+import comment from "./comment.png"
+import confidenceRed from "./confidenceRed.png"
+import growth from "./growth.png"
+import heart from "./heart.png"
+import school from "./school.png"
+import smiley from "./smiley.png"
+import sportTeam from "./sportTeam.png"
+import contactHeader from "./contactHeader.png"
 export const images = {
   slider: {
     arrow_back: arrow_back,
@@ -46,7 +54,17 @@ export const images = {
     team: [nur, shahira, Fatin],
   },
   services: {
-    noPath: noPath
+    noPath: noPath,
+    comment: comment,
+    confidence: confidenceRed,
+    growth: growth,
+    heart: heart,
+    school: school,
+    smiley: smiley,
+    sportTeam: sportTeam,
+  },
+  contact: {
+    header: contactHeader,
   },
   logo: logo,
 }
