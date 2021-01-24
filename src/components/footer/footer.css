@@ -1,8 +1,9 @@
 .footer_container {
   width: 100%;
-  height: 27.037vh;
+  height: 292px;
   background-color: #33535f;
   display: flex;
+  padding-top: 20px;
 }
 .footer_image_container {
   width: 6.979vw;
@@ -12,8 +13,8 @@
   justify-content: center;
 }
 .footer_image {
-  width: 1.7vw;
-  height: 3vh;
+  width: 36px;
+  height: 36px;
 }
 .footer_image_link {
   width: 3.5vw;

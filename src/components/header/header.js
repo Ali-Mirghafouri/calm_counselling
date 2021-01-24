@@ -3,7 +3,7 @@ import React from "react"
 export function Header({header, subHeader, image}) {
   const container = {
     width: "100%",
-    height: "22vw",
+    height: "426px",
     backgroundImage: `url(${image})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -12,7 +12,7 @@ export function Header({header, subHeader, image}) {
   const container_inner = {
     backdropFilter: "blur(19px)",
     width: "100%",
-    height: "22vw",
+    height: "426px",
     backgroundColor: "rgba(0, 0, 0, 40%)",
     display: "flex",
     flexDirection: "column",

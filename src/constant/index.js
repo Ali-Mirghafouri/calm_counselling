@@ -1,10 +1,12 @@
 export const SLIDER = {
   quote: [
-    '"this is a very long long long long quefissldnsdkc"',
-    '" The greatest discovery of all time is that a person can change his future by merely changing his attitude."',
-    '"loerm ipskajf;ajfkdf;ljafknanvclaknakncakmnlnaflknasdlmaskndaslkn aksn a;dn a;ksdm q;samdn ak"',
+    '"In a gentle way, you can shake the world."',
+    '" An ounce of practice is worth a thousand words."',
+    '"Yesterday I was clever, so I wanted to change the world. Today, i am wise, so I am changing myself."',
+    '"The wound is the place where light enters you."',
   ],
-  writer: ["-someone someone", "- Oprah Winfrey", "-someone someone"],
+
+  writer: ["-Mahatma Gandhi", "- Mahatma Gandhi", "-Rumi", "-Rumi"],
 }
 
 export const HOME = {
@@ -89,6 +91,18 @@ export const SERVICES = {
   harmonious_relationship_description: "Support to achieve harmonious relationships",
   training_workshop: "Training and Workshop",
   training_workshop_description: "Training and workshop on personal development",
+}
+
+export const CONTACT = {
+  phone: "PHONE",
+  number1: "+603-6151 5610",
+  number2: "+601-2303 4865",
+  address: "ADDRESS",
+  address_info1: "58A, Jalan BRP 1/2 Bukit ",
+  address_info2: "Rahman Putra 47000, Sungai Buloh ",
+  address_info3: "Selangor Darul Ehsan",
+  email: "EMAIL",
+  email_info: "thecalmcs@gmail.com",
 }
 
 export const NAV = ["Home", "About", "Services", "Contact"]

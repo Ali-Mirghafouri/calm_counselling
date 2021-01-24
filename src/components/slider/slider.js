@@ -7,6 +7,7 @@ import {images} from "../../images"
 export function Slider() {
   return (
     <Carousel
+      wrapAround={true}
       dragging={false}
       renderCenterLeftControls={({previousSlide}) => (
         <img

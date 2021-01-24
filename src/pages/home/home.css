@@ -1,6 +1,6 @@
 .home_section1 {
   width: 100%;
-  height: 89.4vh;
+  height: 966px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -14,7 +14,7 @@
 }
 .home_section1_quote_container {
   width: 53.646vw;
-  height: 36.019vh;
+  height: 340px;
   background-color: rgb(3, 34, 39, 65%);
   border-radius: 100px;
   display: flex;
@@ -22,13 +22,14 @@
   align-items: center;
 }
 .home_section1_quote {
+  width: 900px;
   color: white;
-  font-size: 39px;
+  font-size: 2.13vw;
   line-height: 66px;
   letter-spacing: 4px;
   text-align: center;
-  padding: 0px 94px;
   opacity: 100%;
+  text-align: center;
 }
 .home_section1_button {
   width: 27.24vw;
@@ -44,7 +45,6 @@
 }
 .home_section3_container {
   width: 100%;
-  height: 42.037vh;
   background-color: #d7eae0;
 }
 .home_section3_header {
@@ -58,17 +58,17 @@
   width: 81%;
   text-align: center;
   font-size: 30px;
-  /* font-weight: 500; */
   padding-top: 80px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 104px;
 }
 .home_section4_container {
   width: 100%;
-  height: 112.741vh;
+  /* height: 112.741vh; */
 }
 .home_section4_header {
-  width: 50%;
+  width: 870px;
   text-align: center;
   font-size: 73px;
   font-weight: 500;
@@ -77,12 +77,12 @@
   margin-bottom: 50px;
 }
 .home_section4_content_container {
-  padding: 0px 185px;
+  padding: 0px 10vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .home_section5_container {
-  height: 49.907vh;
   width: 100%;
   background-color: #d7eae0;
   display: flex;
@@ -94,18 +94,26 @@
   line-height: 94px;
   letter-spacing: 1px;
   margin: auto;
+  padding: 104px 0px;
 }
 .home_section6_container {
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 98.796vh;
   width: 100%;
+  padding-top: 40px;
 }
 .home_section6_header {
   text-align: center;
   font-size: 68px;
   font-weight: 500;
-  padding-top: 40px;
+}
+.home_section6_image {
+  position: absolute;
+  width: 100%;
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: -1;
 }
 .home_leaf1 {
   width: 10vw;
@@ -116,10 +124,11 @@
   width: 30%;
   padding-top: 6vh;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.5vw;
   margin-left: auto;
   margin-right: 14%;
   line-height: 68px;
+  margin-bottom: 300px;
 }
 
 .test {

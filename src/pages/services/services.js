@@ -24,11 +24,11 @@ export function Services() {
   }
   const paper_small = {
     width: "35vw",
-    height: "18vw",
+    height: "444px",
   }
   const paper_big_image = {
     height: "100%",
-    marginLeft: "200px",
+    marginLeft: "7vw",
     display: "flex",
     alignItems: "center",
   }
@@ -65,8 +65,8 @@ export function Services() {
 
   const paper_big_text_subHeader = {
     textAlign: "center",
-    fontSize: "46px",
-    width: "46vw",
+    fontSize: "45px",
+    width: "45vw",
   }
 
   const paper_small_text_subHeader = {

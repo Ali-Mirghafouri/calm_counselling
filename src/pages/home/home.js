@@ -6,7 +6,6 @@ import "./home.css"
 
 export function Home() {
   const bg_pic = {backgroundImage: `url(${images.home.bg_picture})`}
-  const bg_section6 = {backgroundImage: `url(${images.home.section6})`}
 
   return (
     <Fragment>
@@ -29,8 +28,7 @@ export function Home() {
           {HOME.allTypesOfCounselling.map((text, index) => (
             <div
               style={{
-                padding: index === 1 || index === 4 ? "0px 240px" : null,
-                marginBottom: index === 0 ? "40px" : null,
+                padding: "3vw",
               }}>
               <ImageWithText
                 key={text}
@@ -38,8 +36,8 @@ export function Home() {
                 textStyle={{textAlign: "center"}}
                 image={images.home.types[index]}
                 fontSize="30px"
-                imageWidth="18.229vw"
-                imageHeight="32.407vh"></ImageWithText>
+                imageWidth="360px"
+                imageHeight="360px"></ImageWithText>
             </div>
           ))}
         </div>
@@ -47,7 +45,8 @@ export function Home() {
       <div className="home_section5_container">
         <div className="home_section5_content">{HOME.effectsOfCounselling}</div>
       </div>
-      <div className="home_section6_container" style={bg_section6}>
+      <div className="home_section6_container">
+        <img className="home_section6_image" src={images.home.section6} alt="help" />
         <div className="home_section6_header">{HOME.howIsCounselling}</div>
         <div className="home_section6_content">{HOME.howIsCounsellingContent}</div>
       </div>

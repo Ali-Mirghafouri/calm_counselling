@@ -10,6 +10,7 @@ import lost from "./lost.png"
 import marital from "./marital.png"
 import therapeutic_section from "./therapeutic_section.png"
 import location from "./location.png"
+import location2 from "./location2.png"
 import phone from "./phone.png"
 import mail from "./mail.png"
 import insta from "./insta.png"
@@ -31,6 +32,7 @@ import school from "./school.png"
 import smiley from "./smiley.png"
 import sportTeam from "./sportTeam.png"
 import contactHeader from "./contactHeader.png"
+import mail_outline from "./mail_outline.png"
 export const images = {
   slider: {
     arrow_back: arrow_back,
@@ -65,6 +67,8 @@ export const images = {
   },
   contact: {
     header: contactHeader,
+    location: location2,
+    mail: mail_outline
   },
   logo: logo,
 }

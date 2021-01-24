@@ -1,7 +1,8 @@
-import React, {Fragment} from "react"
+import React, {Fragment, useState} from "react"
 import {Footer, Header, ImageWithText} from "../../components"
 import {ABOUT} from "../../constant"
 import {images} from "../../images"
+import "./about.css"
 
 export function About() {
   const container = {
@@ -66,12 +67,11 @@ export function About() {
     marginLeft: "40px",
     textAlign: "center",
   }
+
   const why_description = {
-    marginLeft: "47%",
-    marginRight: "100px",
+    marginLeft: "900px",
     marginTop: "30px",
-    textAlign: "left",
-    fontSize: "30px",
+    fontSize: window.innerWidth < 1725 ? "1.2vw" : "1.6vw",
     lineHeight: "60px",
   }
   const imageStyle = {
@@ -88,7 +88,7 @@ export function About() {
           </div>
           <div style={box2}></div>
         </div>
-        <div style={why_description}>
+        <div className="why_description">
           {ABOUT.why_description.map((text) => (
             <div>{text}</div>
           ))}
@@ -96,14 +96,16 @@ export function About() {
       </div>
       <div style={{display: "flex", justifyContent: "center", marginBottom: "162px"}}>
         {ABOUT.why_reasons.text.map((text, index) => (
-          <div>
+          <div
+            style={{
+              margin: " 0px auto",
+            }}>
             <ImageWithText
               containerStyle={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                marginLeft: "100px",
               }}
               textStyle={{textAlign: "center"}}
               imageContainerStyle={{
