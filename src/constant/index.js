@@ -1,3 +1,5 @@
+import {images} from "../images"
+
 export const SLIDER = {
   quote: [
     '"In a gentle way, you can shake the world."',
@@ -94,15 +96,40 @@ export const SERVICES = {
 }
 
 export const CONTACT = {
-  phone: "PHONE",
-  number1: "+603-6151 5610",
-  number2: "+601-2303 4865",
-  address: "ADDRESS",
-  address_info1: "58A, Jalan BRP 1/2 Bukit ",
-  address_info2: "Rahman Putra 47000, Sungai Buloh ",
-  address_info3: "Selangor Darul Ehsan",
-  email: "EMAIL",
-  email_info: "thecalmcs@gmail.com",
+  data: [
+    {
+      image: images.contact.phone,
+      title: "PHONE",
+      text: ["+603-6151 5610", "+601-2303 4865"],
+    },
+    {
+      image: images.contact.location,
+      title: "ADDRESS",
+      text: [
+        "58A, Jalan BRP 1/2 Bukit",
+        "Rahman Putra 47000, Sungai Buloh",
+        "Selangor Darul Ehsan",
+      ],
+    },
+    {
+      image: images.contact.mail,
+      title: "EMAIL",
+      text: ["thecalmcs@gmail.com"],
+    },
+  ],
 }
 
 export const NAV = ["Home", "About", "Services", "Contact"]
+
+export const FOOTER = {
+  info: [
+    "58A, Jalan BRP 1/2 Bukit Rahman Putra 47000, Sungai Buloh Selangor Darul Ehsan",
+    "+603-6151 5610",
+    "thecalmcs@gmail.com",
+  ],
+  infoImage: [images.footer.location, images.footer.phone, images.footer.mail],
+  copyRight: "COPYRIGHT © CALMCOUNSELLING 2020",
+  social: ["@thecalmcs", "@CalmCounselling"],
+  socialImage: [images.footer.insta, images.footer.facebook],
+  socialLink: ["https://www.instagram.com/thecalmcs/", "https://www.facebook.com/calmCS/"],
+}

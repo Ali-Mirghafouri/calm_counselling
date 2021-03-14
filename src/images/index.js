@@ -33,6 +33,8 @@ import smiley from "./smiley.png"
 import sportTeam from "./sportTeam.png"
 import contactHeader from "./contactHeader.png"
 import mail_outline from "./mail_outline.png"
+import contact_phone from "./contact_phone.png"
+import google_maps_location from "./google_maps_location.png"
 export const images = {
   slider: {
     arrow_back: arrow_back,
@@ -67,8 +69,10 @@ export const images = {
   },
   contact: {
     header: contactHeader,
+    phone: contact_phone,
     location: location2,
-    mail: mail_outline
+    mail: mail_outline,
+    google_maps_location: google_maps_location,
   },
   logo: logo,
 }

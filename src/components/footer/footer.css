@@ -16,11 +16,42 @@
   width: 36px;
   height: 36px;
 }
+
+.footer_info_image {
+  width: 36px;
+  height: fit-content;
+}
+
+.footer_soc_image {
+  width: 66px;
+  height: 66px;
+}
+
+.footer_info_container {
+  display: flex;
+}
+
+.footer_soc_container {
+  margin-bottom: 57px;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .footer_image_link {
   width: 3.5vw;
   height: 5.5vh;
 }
+
 .footer_text {
+  font-size: 19px;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.footer_soc_text {
   font-size: 19px;
   width: 20vw;
   display: flex;
