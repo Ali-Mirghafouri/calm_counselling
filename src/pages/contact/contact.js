@@ -1,10 +1,60 @@
-import React, {Fragment} from "react"
+import React, {Fragment, useState} from "react"
 import {Footer, Header} from "../../components"
 import {images} from "../../images"
 import {Paper} from "../../components"
 import {CONTACT} from "../../constant"
 
+import * as emailjs from "emailjs-com"
+emailjs.init("user_iCfG1P6IsdTrS0CKX21GG")
+
+const SERVICE_ID = "service_mrs88pa" //get these from the website
+const TEMPLATE_ID = "template_yfg55w8"
+const USER_ID = "user_7lb3PAGKnyYTi2no5SgHT"
+
 export function Contact() {
+  const [data, setData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+  })
+
+  function handleChange(e) {
+    let name = e.target.name
+    let value = e.target.value
+    setData({
+      ...(data[name] = value),
+    })
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text)
+      },
+      (error) => {
+        console.log(error.text)
+      }
+    )
+  }
+
+  // if (
+  //   data.first_name !== "" &&
+  //   data.last_name !== "" &&
+  //   data.email !== "" &&
+  //   data.message !== ""
+  // )
+  // console.log(tempData)
+  // emailjs.send(SERVICE_ID, TEMPLATE_ID, tempData, USER_ID).then(
+  //   function (response) {
+  //     console.log(response.status, response.text)
+  //   },
+  //   function (err) {
+  //     console.log(err)
+  //   }
+  // )
+
   const papers_container = {
     display: "flex",
     justifyContent: "center",
@@ -112,15 +162,17 @@ export function Contact() {
               />
             </a>
           </div>
-          <form>
+          <form onSubmit={(e) => handleSubmit(e)}>
             <div style={{display: "flex", marginBottom: "32px"}}>
               <div style={{marginRight: "100px"}}>
                 <label for="first_name" style={label_text}>
                   First Name
                 </label>{" "}
                 <input
+                  required
                   name="first_name"
                   id="first_name"
+                  onChange={(e) => handleChange(e)}
                   style={{
                     ...label_style,
                     width: "100%",
@@ -131,26 +183,40 @@ export function Contact() {
                 <label for="last_name" style={label_text}>
                   Last Name
                 </label>{" "}
-                <input name="last_name" id="last_name" style={{...label_style, width: "100%"}} />
+                <input
+                  required
+                  onChange={(e) => handleChange(e)}
+                  name="last_name"
+                  id="last_name"
+                  style={{...label_style, width: "100%"}}
+                />
               </div>
             </div>
             <div style={{marginBottom: "32px"}}>
               <label for="email" style={label_text}>
                 Email Address
               </label>{" "}
-              <input type="email" name="email" id="email" style={{...label_style, width: "100%"}} />
+              <input
+                required
+                onChange={(e) => handleChange(e)}
+                type="email"
+                name="email"
+                id="email"
+                style={{...label_style, width: "100%"}}
+              />
             </div>
             <label for="message" style={label_text}>
               Send Us A Message
             </label>{" "}
             <textarea
+              required
+              onChange={(e) => handleChange(e)}
               name="message"
               id="message"
               style={{...label_style, width: "100%", paddingBottom: "376px", paddingTop: "18px"}}
             />
             <div style={{display: "flex", marginBottom: "40px"}}>
               <input
-                // onClick={handleSubmit}
                 type="submit"
                 value="Send Message"
                 style={{
