@@ -22,8 +22,8 @@ function App() {
       </div>
       <Switch>
         <Route exact path="/">
-          <Home />
-          {/* <Redirect exact from="/" to="/Home" /> */}
+          {/* <Home /> */}
+          <Redirect exact from="/" to="/Home" />
         </Route>
         <Route path="/Home">
           <Home />
