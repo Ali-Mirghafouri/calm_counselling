@@ -1,6 +1,5 @@
 import React from "react"
 import {FOOTER} from "../../constant"
-import {images} from "../../images"
 import "./footer.css"
 
 export function Footer() {

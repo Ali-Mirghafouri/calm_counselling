@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react"
+import React, {Fragment} from "react"
 import {Footer, Header, ImageWithText} from "../../components"
 import {ABOUT} from "../../constant"
 import {images} from "../../images"
@@ -68,12 +68,12 @@ export function About() {
     textAlign: "center",
   }
 
-  const why_description = {
-    marginLeft: "900px",
-    marginTop: "30px",
-    fontSize: window.innerWidth < 1725 ? "1.2vw" : "1.6vw",
-    lineHeight: "60px",
-  }
+  // const why_description = {
+  //   marginLeft: "900px",
+  //   marginTop: "30px",
+  //   fontSize: window.innerWidth < 1725 ? "1.2vw" : "1.6vw",
+  //   lineHeight: "60px",
+  // }
   const imageStyle = {
     imageWidth: ["217px", "290px", "397px", "341px"],
     imageHeight: ["248px", "290px", "272px", "299px"],
