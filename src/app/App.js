@@ -23,16 +23,14 @@ function App() {
           <Redirect from="/" to="/Home" />
           <Home />
         </Route>
-        <Route path="/Home">
-          <Home />
-        </Route>
-        <Route path="/About">
+        <Route exact path="/Home" component={Home} />
+        <Route exact path="/About">
           <About />
         </Route>
-        <Route path="/Services">
+        <Route exact path="/Services">
           <Services />
         </Route>
-        <Route path="/Contact">
+        <Route exact path="/Contact">
           <Contact />
         </Route>
       </Switch>
