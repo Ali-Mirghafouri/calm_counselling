@@ -19,7 +19,9 @@ function App() {
         </div>
       </div>
       <Switch>
-        <Route exact path="/" to="/Home"  />
+        <Route exact path="/">
+          <Redirect exact from="/" to="/Home" />
+        </Route>
         <Route exact path="/Home" component={Home} />
         <Route exact path="/About">
           <About />
