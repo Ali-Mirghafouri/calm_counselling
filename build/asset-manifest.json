@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.94fdf455.chunk.css",
-    "main.js": "/static/js/main.55ec1305.chunk.js",
-    "main.js.map": "/static/js/main.55ec1305.chunk.js.map",
+    "main.js": "/static/js/main.4cb1b0ee.chunk.js",
+    "main.js.map": "/static/js/main.4cb1b0ee.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.87e9ee21.js",
     "runtime-main.js.map": "/static/js/runtime-main.87e9ee21.js.map",
-    "static/js/2.0c247693.chunk.js": "/static/js/2.0c247693.chunk.js",
-    "static/js/2.0c247693.chunk.js.map": "/static/js/2.0c247693.chunk.js.map",
+    "static/js/2.d4636fcc.chunk.js": "/static/js/2.d4636fcc.chunk.js",
+    "static/js/2.d4636fcc.chunk.js.map": "/static/js/2.d4636fcc.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.94fdf455.chunk.css.map": "/static/css/main.94fdf455.chunk.css.map",
-    "static/js/2.0c247693.chunk.js.LICENSE.txt": "/static/js/2.0c247693.chunk.js.LICENSE.txt",
+    "static/js/2.d4636fcc.chunk.js.LICENSE.txt": "/static/js/2.d4636fcc.chunk.js.LICENSE.txt",
     "static/media/Fatin.64a1ddc9.png": "/static/media/Fatin.64a1ddc9.png",
     "static/media/about_us_header.f5d4ffd8.png": "/static/media/about_us_header.f5d4ffd8.png",
     "static/media/behaviour.f847cd68.png": "/static/media/behaviour.f847cd68.png",
@@ -33,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.87e9ee21.js",
-    "static/js/2.0c247693.chunk.js",
+    "static/js/2.d4636fcc.chunk.js",
     "static/css/main.94fdf455.chunk.css",
-    "static/js/main.55ec1305.chunk.js"
+    "static/js/main.4cb1b0ee.chunk.js"
   ]
 }
