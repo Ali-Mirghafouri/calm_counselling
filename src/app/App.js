@@ -1,6 +1,6 @@
 import "./App.css"
 import React from "react"
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom"
+import {BrowserRouter as Router, Switch, Route, Redirect, Link} from "react-router-dom"
 import {About, Home, Services, Contact} from "../pages"
 import {NAV} from "../constant"
 import {images} from "../images"
@@ -9,26 +9,24 @@ function App() {
   return (
     <Router>
       <div className="app_nav_container">
-        <div className="app_img_container">
-          <img src={images.logo} alt="calm counselling logo"></img>
-        </div>
+        <img src={images.logo} alt="calm counselling logo" className="app_img"></img>
         <div className="app_nav_options_container">
           {NAV.map((tabName) => (
-            <a key={tabName} className="app_nav_option" href={"/" + tabName}>
+            <Link key={tabName} className="app_nav_option" to={"/" + tabName}>
               {tabName}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
       <Switch>
         <Route exact path="/">
-          {/* <Home /> */}
-          <Redirect exact from="/" to="/Home" />
+          <Redirect from="/" to="/Home" />
+          <Home />
         </Route>
         <Route path="/Home">
           <Home />
         </Route>
-        <Route path="/about">
+        <Route path="/About">
           <About />
         </Route>
         <Route path="/Services">

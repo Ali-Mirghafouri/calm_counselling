@@ -42,6 +42,7 @@ export function Home() {
           ))}
         </div>
       </div>
+      
       <div className="home_section5_container">
         <div className="home_section5_content">{HOME.effectsOfCounselling}</div>
       </div>
